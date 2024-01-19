@@ -76,8 +76,10 @@
 <style scoped>
 
     .wrapper {
+        margin: auto;
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     img{
         height: 30px;
@@ -87,20 +89,22 @@
         vertical-align: top;
         display: inline-block;
         text-align: center;
-        width: 120px;
+        padding: 20px;
+        border: 2px solid black;
     }
-    .social-links img {
-        height: 2.5rem
-    }
+    
     .caption {
         display: block;
-        color: black
+        text-align: center;
+        color: black;
+        width: 20%;
     }
 
     .social-links {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        width: 100%;
     }
 
     .logos {
@@ -116,8 +120,10 @@
 
     .container1 {
         background-color: azure;
+        margin: auto;
         padding: .6%;
         height:60%;
+        width: 75%
     }
 
     .container2 {
@@ -136,7 +142,7 @@
     }
 
     .logos img {
-        width: 5% 
+        width: 5%;
     }
 
     .button-container {

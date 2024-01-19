@@ -1,19 +1,18 @@
 <template>
   <div id="app">
     <MainCard/>
-    <ProjectCard/>
+    <!--<ProjectCard/>-->
   </div>
 </template>
 
 <script>
 import MainCard from './components/MainCard.vue';
-import ProjectCard from './components/ProjectCard.vue';
+
 
 export default {
   name: 'App',
   components: {
-    MainCard,
-    ProjectCard
+    MainCard
   }
 }
 </script>
@@ -26,5 +25,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  align-content: center;
 }
 </style>
