@@ -43,5 +43,6 @@ export default {
     }
     .project-card img {
         height: 20rem;
+        max-width: 387px;
     }
 </style>
