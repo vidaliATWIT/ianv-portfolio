@@ -7,26 +7,26 @@
                     <h3>Ian Vidal</h3>
                     <p>Software Developer</p>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/vidaliATWIT">
+                <div class="social-links row">
+                    <a class="col col-lg-2" href="https://github.com/vidaliATWIT">
                         <div class="link">
                             <img src="../assets/square-github.svg" alt="">
                             <span class="caption">Github</span>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/ian-vidal/">
+                    <a class="col col-lg-2" href="https://www.linkedin.com/in/ian-vidal/">
                         <div class="link">
                             <img src="../assets/linkedin.svg" alt="">
                             <span class="caption">LinkedIn</span>
                         </div>
                     </a>
-                    <a href="">
+                    <a class="col col-lg-2"  href="">
                         <div class="link">
                             <img src="../assets/square-instagram.svg" alt="">
                             <span class="caption">Instagram</span>
                         </div>
                     </a>
-                    <a href="https://experimentalcolourtransmission.bandcamp.com/">
+                    <a class="col col-lg-2"  href="https://experimentalcolourtransmission.bandcamp.com/">
                         <div class="link">
                             <img src="../assets/bandcamp.svg" alt="">
                             <span class="caption">Bandcamp</span>
@@ -85,14 +85,39 @@
         height: 30px;
     }
 
+    /**
+
+    
+
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    */
+
+   
+    /*
     .link {
         vertical-align: top;
-        display: inline-block;
+        justify-content: center;
         text-align: center;
+        display: flex;
+        flex-direction: row;
         padding: 20px;
         border: 2px solid black;
     }
+    */
     
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
     .caption {
         display: block;
         text-align: center;
@@ -100,11 +125,14 @@
         width: 20%;
     }
 
-    .social-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
+    .link {
+        vertical-align: top;
+        display: inline-block;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .link img {
+        height: 40px;
     }
 
     .logos {
