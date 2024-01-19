@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <MainCard/>
+    <ProjectCard/>
   </div>
 </template>
 
 <script>
 import MainCard from './components/MainCard.vue';
+import ProjectCard from './components/ProjectCard.vue';
 
 export default {
   name: 'App',
   components: {
-    MainCard
+    MainCard,
+    ProjectCard
   }
 }
 </script>
