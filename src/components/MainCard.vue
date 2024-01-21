@@ -142,12 +142,12 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        background-color: azure;
+        background-color: rgb(255, 255, 255);
         width:75%
     }
 
     .container1 {
-        background-color: azure;
+        background-color: rgb(255, 255, 255);
         margin: auto;
         padding: .6%;
         height:60%;
@@ -155,7 +155,7 @@
     }
 
     .container2 {
-        background-color: azure;
+        background-color: rgb(255, 255, 255);
         padding: .6%;
     }
 
