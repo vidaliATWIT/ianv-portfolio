@@ -5,6 +5,7 @@
                 <h2>{{projectData.ProjectsArray[index].title}}</h2>
                 <img :src="projectData.ProjectsArray[index].image" alt="">
                 <p>{{projectData.ProjectsArray[index].description}}</p>
+                <!--<a href="projectData.ProjectsArray[index].link1">Github</a>-->
             </div>
             <!--{{projectData}}-->
         </div>
@@ -22,27 +23,37 @@ export default {
 </script>
 
 <style>
+    .wrapper {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     .main-container {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-wrap: wrap;
+        max-width: 75%;
+
     }
     .project-card {
         flex-wrap: wrap;
         margin: 10px;
-        border: 2px solid black;
+        /*border: 1px solid rgb(0, 0, 0);*/
+        width: 100%;;
     }
 
     .project-card p {
         margin: auto;
-        width: 70%;
+        width: 75%;
         border: 1px solid rgb(255, 255, 255);
         padding: 5px;
     }
     .project-card img {
-        height: 20rem;
-        max-width: 387px;
+        
+        height: auto;
+        max-width: 401px;
     }
 </style>
