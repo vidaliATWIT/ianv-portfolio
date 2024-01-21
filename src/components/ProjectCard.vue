@@ -36,13 +36,14 @@ export default {
         text-align: center;
         flex-wrap: wrap;
         max-width: 75%;
+        flex: 1 1 0;
 
     }
     .project-card {
         flex-wrap: wrap;
         margin: 10px;
         /*border: 1px solid rgb(0, 0, 0);*/
-        width: 100%;;
+        width: 100%;
     }
 
     .project-card p {
@@ -52,8 +53,7 @@ export default {
         padding: 5px;
     }
     .project-card img {
-        
         height: auto;
-        max-width: 401px;
+        max-width: 50%;
     }
 </style>
