@@ -55,11 +55,14 @@
                     </div>
                 </div>
                 <div class="button-container" >
+                    <!--
                     <div class="projects-button">
                         <a href="">My Projects</a>
                     </div>
+                    -->
                     <div class="projects-button">
-                        <a href="">My Resume</a>
+                        <!--<button @click="downloadResume()">Download Resume</button>-->
+                        <a href="http://localhost:8080/resume.pdf" target="__blank" rel="noopener noreferrer">My Resume (PDF)</a>
                     </div>
                 </div>
             </div>
@@ -68,8 +71,28 @@
 </template>
 
 <script>
+import axios from 'axios';
     export default {
+        methods: {
+          downloadResume() {
+              axios({
+                    url: 'http://localhost:8080/resume.pdf', // File URL Goes Here
+                    method: 'GET',
+                    responseType: 'blob',
+                }).then((response) => {
+                        const href = URL.createObjectURL(response.data);
 
+                        const link = document.createElement('a');
+                        link.href = href;
+                        link.setAttribute('download', 'file.pdf');
+                        document.body.appendChild(link);
+                        link.click();
+
+                        document.body.removeChild(link);
+                        URL.revokeObjectURL(href);
+                });
+          }
+      }
     }
 </script>
 
@@ -182,7 +205,7 @@
     }
 
     .projects-button {
-        background-color: blanchedalmond; 
+        background-color: rgb(213, 213, 213); 
         padding: 5px;
         border-radius: 15px;
         margin: 5px;

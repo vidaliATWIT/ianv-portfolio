@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <NavCard/>
     <MainCard/>
     <ProjectCard/>
   </div>
@@ -9,14 +8,13 @@
 <script>
 import MainCard from './components/MainCard.vue';
 import ProjectCard from './components/ProjectCard.vue';
-import NavCard from './components/NavCard.vue';
-
+//import NavCard from './components/NavCard.vue';
 export default {
   name: 'App',
   components: {
     MainCard,
     ProjectCard,
-    NavCard
+    //NavCard,
   }
 }
 </script>
