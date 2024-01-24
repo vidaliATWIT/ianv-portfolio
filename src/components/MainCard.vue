@@ -20,12 +20,12 @@
                             <span class="caption">LinkedIn</span>
                         </div>
                     </a>
-                    <a class="col col-lg-2"  href="">
+                    <!--<a class="col col-lg-2"  href="">
                         <div class="link">
                             <img src="../assets/square-instagram.svg" alt="">
                             <span class="caption">Instagram</span>
                         </div>
-                    </a>
+                    </a>-->
                     <a class="col col-lg-2"  href="https://experimentalcolourtransmission.bandcamp.com/">
                         <div class="link">
                             <img src="../assets/bandcamp.svg" alt="">
@@ -62,7 +62,7 @@
                     -->
                     <div class="projects-button">
                         <!--<button @click="downloadResume()">Download Resume</button>-->
-                        <a href="http://localhost:8080/resume.pdf" target="__blank" rel="noopener noreferrer">My Resume (PDF)</a>
+                        <a href="https://ian-v-portfolio.web.app/resume.pdf" target="__blank" rel="noopener noreferrer">My Resume (PDF)</a>
                     </div>
                 </div>
             </div>
@@ -135,6 +135,7 @@ import axios from 'axios';
     */
     
     .social-links {
+        margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
