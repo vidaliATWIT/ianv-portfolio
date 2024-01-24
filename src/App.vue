@@ -15,6 +15,9 @@ export default {
     MainCard,
     ProjectCard,
     //NavCard,
+  },
+  mounted() {
+    document.title="Ian Vidal's Portfolio";
   }
 }
 </script>
