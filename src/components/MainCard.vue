@@ -109,10 +109,6 @@ import axios from 'axios';
     }
 
     /**
-
-    
-
-
     .social-links {
         display: flex;
         flex-direction: row;

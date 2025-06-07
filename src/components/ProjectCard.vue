@@ -32,7 +32,7 @@ export default {
         width: 100%;
     }
     .main-container {
-        padding: 2.5%;
+        padding: 0.0%;
         display: flex;
         justify-content: center;
         align-items: center;
