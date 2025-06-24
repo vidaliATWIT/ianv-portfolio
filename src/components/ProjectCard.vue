@@ -1,15 +1,20 @@
-<template lang="">
+<template>
     <div class="wrapper">
         <div class="main-container">
             <div class="title"><h1>Projects:</h1></div>
+            <div class="project-card" v-for="project in projectData.ProjectsArray" :key="project.id">
+                <h2>{{ project.title }}</h2>
+                <img :src="project.image" :alt="project.title">
+                <p>{{ project.description }}</p>
 
-            <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
-                <h2>{{projectData.ProjectsArray[index].title}}</h2>
-                <img :src="projectData.ProjectsArray[index].image" alt="">
-                <p>{{projectData.ProjectsArray[index].description}}</p>
-                <!--<a href="projectData.ProjectsArray[index].link1">Github</a>-->
+                <div class="project-links" v-if="project['link-1']">
+                    <a v-if="project['link-1']" :href="project['link-1']" target="_blank">[GitHub]</a>
+                </div>
+                <div class="project-links" v-if="project['link-2']">
+                    <a v-if="project['link-2']" :href="project['link-2']" target="_blank">[{{project['link-2-name']}}]</a>
+                </div>
+
             </div>
-            <!--{{projectData}}-->
         </div>
     </div>
 </template>

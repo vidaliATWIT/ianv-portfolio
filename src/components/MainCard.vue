@@ -44,10 +44,10 @@
                 <div class="technology-section">
                     <h3>Tech Stack</h3>
                     <div class="logos">
+                        <img src="../assets/cplusplus.svg" alt="">
                         <img src="../assets/python.svg" alt="">
                         <img src="../assets/js.svg" alt="">
                         <img src="../assets/golang.svg" alt="">
-                        <img src="../assets/java.svg" alt="">
                         <img src="../assets/html5.svg" alt="">
                         <img src="../assets/css3-alt.svg" alt="">
                         <img src="../assets/vuejs.svg" alt="">
