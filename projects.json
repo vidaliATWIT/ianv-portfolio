@@ -2,9 +2,11 @@
     "ProjectsArray": [
         {
             "id": 1,
-            "title": "Metal Box",
+            "title": "Metal Box VST3 Plugin",
             "description": "A cross-platform algorithimic reverb plugin built in C++ with JUCE. Featuring an offline RSA-based purchase validation system I developed using crypto++.",
-            "image":"/images/projects/metalbox.png"
+            "image":"/images/projects/metalbox.png",
+            "link-2-name": "Demo Video",
+            "link-2": "https://youtu.be/58CH4Sboqyc"
         },
         {
             "id": 2,
