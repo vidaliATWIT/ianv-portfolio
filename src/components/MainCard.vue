@@ -54,17 +54,6 @@
                         <img src="../assets/angular.svg" alt="">
                     </div>
                 </div>
-                <div class="button-container" >
-                    <!--
-                    <div class="projects-button">
-                        <a href="">My Projects</a>
-                    </div>
-                    -->
-                    <div class="projects-button">
-                        <!--<button @click="downloadResume()">Download Resume</button>-->
-                        <a href="https://ian-v-portfolio.web.app/resume.pdf" target="__blank" rel="noopener noreferrer">My Resume (PDF)</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

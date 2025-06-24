@@ -15,6 +15,11 @@
                 </div>
 
             </div>
+            <div class="button-container" >
+                <div class="projects-button">
+                    <a href="https://ian-v-portfolio.web.app/resume.pdf" target="__blank" rel="noopener noreferrer">My Resume (PDF)</a>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -66,5 +71,23 @@ export default {
     .project-card img {
         height: auto;
         max-width: 60%;
+    }
+    .button-container {
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-button {
+        background-color: rgb(213, 213, 213); 
+        padding: 5px;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .projects-button a{
+        text-decoration: none;
+        color: black;
     }
 </style>
