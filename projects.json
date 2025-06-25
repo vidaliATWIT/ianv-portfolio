@@ -41,14 +41,6 @@
             "image":"/images/projects/SpyWire.png",
             "link-1": "https://github.com/vidaliATWIT/SpyWire-P2P-Chat",
             "link-2": ""
-        },
-        {
-            "id": 3,
-            "title": "Dungeon Crawler RPG",
-            "description": "A 2.5D dungeon crawler I created in python using pygame, with a custom tile-generation algorithm.",
-            "image":"/images/projects/dungeoncrawler.png",
-            "link-1": "https://github.com/vidaliATWIT/Pygame-Dungeon-Crawler",
-            "link-2": ""
         }
     ]
     
