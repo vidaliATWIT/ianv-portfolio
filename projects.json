@@ -13,7 +13,9 @@
             "title": "ACK! Retro RPG",
             "description": "A cross-platform retro RPG I made in Lua using the LOVE2D framework. Featuring a branching dialog system, complex enemy AI with LoS behavior, and original art, sound, and music.",
             "image":"/images/projects/ack.png",
-            "link-1":"https://github.com/vidaliATWIT/ACK"
+            "link-1":"https://github.com/vidaliATWIT/ACK",
+            "link-2-name": "Gameplay Video",
+            "link-2": "https://youtu.be/RfVkPCWk5Sk"
         },
         {
             "id": 3,
