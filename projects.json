@@ -4,18 +4,16 @@
             "id": 1,
             "title": "Metal Box VST3 Plugin",
             "description": "A cross-platform algorithimic reverb plugin built in C++ with JUCE. Featuring an offline RSA-based purchase validation system I developed using crypto++.",
-            "image":"/images/projects/metalbox.png",
-            "link-2-name": "Demo Video",
-            "link-2": "https://youtu.be/Wvjfwo7jees"
+            "backup-image":"/images/projects/metalbox.png",
+            "video-link": "https://youtu.be/Wvjfwo7jees"
         },
         {
             "id": 2,
             "title": "ACK! Retro RPG",
             "description": "A cross-platform retro RPG I made in Lua using the LOVE2D framework. Featuring a branching dialog system, complex enemy AI with LoS behavior, and original art, sound, and music.",
-            "image":"/images/projects/ack.png",
+            "backup-image":"/images/projects/ack.png",
             "link-1":"https://github.com/vidaliATWIT/ACK",
-            "link-2-name": "Gameplay Video",
-            "link-2": "https://youtu.be/RfVkPCWk5Sk"
+            "video-link": "https://youtu.be/RfVkPCWk5Sk"
         },
         {
             "id": 3,

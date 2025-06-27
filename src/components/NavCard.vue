@@ -27,5 +27,6 @@ export default {
     .wrap {
         margin: auto;
         width: 75%;
+        padding: 15px; /* Added padding */
     }
 </style>

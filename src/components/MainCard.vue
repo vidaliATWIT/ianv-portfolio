@@ -40,9 +40,7 @@
                     <p>I'm a Software Developer with projects in audio, web development, and game design. 
                         I'm also a musician and published non-fiction writer with articles on musicology and audio tech.
                     </p>
-                </div>
-                <div class="technology-section">
-                    <h3>Tech Stack</h3>
+                    <!--<h4>Tech Stack</h4>-->
                     <div class="logos">
                         <img src="../assets/cplusplus.svg" alt="">
                         <img src="../assets/python.svg" alt="">
@@ -53,6 +51,9 @@
                         <img src="../assets/vuejs.svg" alt="">
                         <img src="../assets/angular.svg" alt="">
                     </div>
+                </div>
+                <div class="technology-section">
+                    
                 </div>
             </div>
         </div>
@@ -86,7 +87,6 @@ import axios from 'axios';
 </script>
 
 <style scoped>
-
     .wrapper {
         margin: auto;
         display: flex;
@@ -146,7 +146,14 @@ import axios from 'axios';
 
     .logos {
         justify-content: center;
+        padding: 15px; /* Added padding */
     }
+
+    .logos img {
+        width: 5%;
+        margin: 0 8px; /* This adds 10px on left and right of each logo */
+    }
+
     .main-container {
         margin: auto;
         display: flex;
@@ -171,6 +178,7 @@ import axios from 'axios';
     .about-me {
         text-align: justified;
         margin: 2.5%;
+        padding: 1.5%;
     }
 
     .profile img {
@@ -199,6 +207,9 @@ import axios from 'axios';
     .projects-button a{
         text-decoration: none;
         color: black;
+    }
+    .technology-section {
+        padding:
     }
     
     

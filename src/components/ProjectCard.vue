@@ -4,7 +4,24 @@
             <div class="title"><h1>Projects:</h1></div>
             <div class="project-card" v-for="project in projectData.ProjectsArray" :key="project.id">
                 <h2>{{ project.title }}</h2>
-                <img :src="project.image" :alt="project.title">
+                
+                <!-- Conditional YouTube embed or image -->
+                <div class="media-container">
+                    <iframe 
+                        v-if="project['video-link']"
+                        :src="getYouTubeEmbedUrl(project['video-link'])"
+                        width="560" 
+                        height="315" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <img 
+                        v-else
+                        :src="project.image" 
+                        :alt="project.title">
+                </div>
+                
                 <p>{{ project.description }}</p>
 
                 <div class="project-links" v-if="project['link-1']">
@@ -23,12 +40,28 @@
         </div>
     </div>
 </template>
+
 <script>
 import jsonData from "/projects.json"
+
 export default {
     data(){
         return{
             projectData: jsonData
+        }
+    },
+    methods: {
+        getYouTubeEmbedUrl(url) {
+            // Extract video ID from YouTube URL
+            const videoId = this.extractYouTubeId(url);
+            return `https://www.youtube.com/embed/${videoId}`;
+        },
+        
+        extractYouTubeId(url) {
+            // Handle different YouTube URL formats
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+            const match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
         }
     }
 }
@@ -60,6 +93,7 @@ export default {
         margin: 10px;
         /*border: 1px solid rgb(0, 0, 0);*/
         width: 100%;
+        padding: 1.0%;
     }
 
     .project-card p {
@@ -90,4 +124,28 @@ export default {
         text-decoration: none;
         color: black;
     }
+    .media-container {
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .media-container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .media-container img {
+        width: 100%;
+        height: auto;
+        max-width: 560px;
+    }
+
+    @media (max-width: 560px) {
+        .media-container iframe {
+            height: 250px;
+        }
+    }
+
 </style>
