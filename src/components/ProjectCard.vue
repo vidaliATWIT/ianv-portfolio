@@ -142,10 +142,4 @@ export default {
         max-width: 560px;
     }
 
-    @media (max-width: 560px) {
-        .media-container iframe {
-            height: 250px;
-        }
-    }
-
 </style>

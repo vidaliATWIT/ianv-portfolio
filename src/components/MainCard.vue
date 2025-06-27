@@ -151,7 +151,8 @@ import axios from 'axios';
 
     .logos img {
         width: 5%;
-        margin: 0 8px; /* This adds 10px on left and right of each logo */
+        min-width: 40px; /* Sets minimum size - adjust this value as needed */
+        margin: 0 8px;
     }
 
     .main-container {
