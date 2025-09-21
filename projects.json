@@ -9,6 +9,12 @@
         },
         {
             "id": 2,
+            "title": "Mimetime VST3 Plugin",
+            "description": "A software re-imagining of the EHX 16 Second Digital Delay pedal programmed in C++ with JUCE. UI developed with Javascript and React via WebView.",
+            "image": "/images/projects/616delay.png"
+        },
+        {
+            "id": 3,
             "title": "ACK! Retro RPG",
             "description": "A cross-platform retro RPG I made in Lua using the LOVE2D framework. Featuring a branching dialog system, complex enemy AI with LoS behavior, and original art, sound, and music.",
             "backup-image":"/images/projects/ack.png",
@@ -16,7 +22,7 @@
             "video-link": "https://youtu.be/RfVkPCWk5Sk"
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "Compugene",
             "description": "A looping audio recorder and processor for Windows. I designed the app and coded the underlying audio processing routines. Built in python using pydub and pyaudio.",
             "image": "/images/projects/compugene.png",
@@ -25,7 +31,7 @@
             "link-2-name": "GUI version"
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "Zone Zero",
             "description": "A web-hosted first-person stealth/horror game I built in Unity with C#. Co-developed with Tommy Nguyen.",
             "image":"/images/projects/zonezero.png",
@@ -35,7 +41,7 @@
         },
         
         {
-            "id": 2,
+            "id": 6,
             "title": "SpyWire P2P",
             "description": "A lightweight p2p chat application I made in python using tkinter and the socket library.",
             "image":"/images/projects/SpyWire.png",
