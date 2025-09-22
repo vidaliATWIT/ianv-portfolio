@@ -11,7 +11,8 @@
             "id": 2,
             "title": "Mimetime VST3 Plugin",
             "description": "A software re-imagining of the EHX 16 Second Digital Delay pedal programmed in C++ with JUCE. UI developed with Javascript and React via WebView.",
-            "image": "/images/projects/616delay.png"
+            "backup-image": "/images/projects/616delay.png",
+            "video-link": "https://youtu.be/l5jEIBZDZaM"
         },
         {
             "id": 3,
