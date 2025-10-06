@@ -17,7 +17,7 @@
         {
             "id": 3,
             "title": "Obaranasatszia Mystery Adventure Game",
-            "description": "A point & click horror game I built as part of a team in Godot. I programmed the game, modeled the 3D backgrounds, and was responsible for the narrative and SFX.",
+            "description": "A point & click horror game I built in Godot. I programmed the game, modeled the 3D backgrounds, and was responsible for the narrative and SFX. Co-developed with Mateo Radosta.",
             "backup-image":"/images/projects/ack.png",
             "video-link": "https://youtu.be/VSBdOGSIIMU"
         },
